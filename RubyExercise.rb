@@ -32,7 +32,7 @@ array.delete(11)
 array.push(3)
 #6. Get rid of duplicates without specifically removing any one value. 
 
-array.uniq
+array.uniq!
 #7. What's the major difference between an Array and a Hash?
 
 puts "Hash'sindexing is done via arbitrary keys of any object type, not an integer index." 
@@ -55,8 +55,8 @@ h[":e"] = 5
 h.delete_if{|key, value| value < 3.5}
 
 #14. Can hash values be arrays? Can you have an array of hashes? (give examples)
-h2 = { "a" => 123, "b" => 456, "c" => 789}
-h2.to_a
+h2 = { "a" => [1, 2, 3], "b" => 456, "c" => 789}
+a3 = [ {a:1, b:2, c:3}, 4, 5, 6]
 
 #15. Look at several Rails/Ruby online API sources and say which one your like best and why.
 
